@@ -15,9 +15,6 @@ class Juego():
             self.ficha = "x"
 
     def ingresar_ficha(self,columna):
-        if 7 < columna < 0:
-            self.pongo_ficha(columna)
-        else:
             self.pongo_ficha(columna)
             if self.ganador():
                 return True
